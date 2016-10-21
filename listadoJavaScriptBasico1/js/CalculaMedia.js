@@ -4,9 +4,13 @@
  * Entonces, que muestre la media
  */
 
-var numero_control=0;
-var numeros = [];
-var suma=0;
+/**
+*Calcula la media de los números que le introducimos
+*/
+function calcularMedia() {
+	let numero_control=0;
+let numeros = [];
+let suma=0;
 
 while(numero_control >= 0) {
     numero_control = prompt("Introduce un número. Introduce un número negativo para mostrar la media");
@@ -27,4 +31,7 @@ for(i=0;i<numeros.length;i++) {
     suma+= parseInt(numeros[i]);
 }
 
-console.log(suma/numeros.length);
+return console.log(suma/numeros.length);
+}
+
+calcularMedia();

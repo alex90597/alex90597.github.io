@@ -4,16 +4,20 @@
  * fecha es correcta. Si lo fuera, ha de monstrar el día después.
  */
 
-var dia = prompt("Introduce un día");
-var mes = prompt("Introduce un mes");
-var annio = prompt("Introduce un año");
+function compruebaFecha() {
+	let dia = prompt("Introduce un día");
+let mes = prompt("Introduce un mes");
+let annio = prompt("Introduce un año");
 
-var cadena = annio+"-"+mes+"-"+dia;
-var fecha = new Date(cadena);
+let cadena = annio+"-"+mes+"-"+dia;
+let fecha = new Date(cadena);
 
 if (fecha == "Invalid Date") {
-    console.log("La fecha introducida no es válida");
+    return console.log("La fecha introducida no es válida");
 } else  {
     fecha.setSeconds(86400);
-    console.log("Fecha final: " + fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear());
+    return console.log("Fecha final: " + fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear());
 }
+}
+
+compruebaFecha();

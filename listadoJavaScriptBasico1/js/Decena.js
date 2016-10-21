@@ -5,14 +5,15 @@
  * b) Lo muestre al revés
  */
 
-var numero;
+function infoDecenas() {
+	let numero;
 while(isNaN(numero) || numero < 0 || numero >10) {
     numero = prompt("Introduce un número entre 0 y 10");
 }
 
 console.log("El número " + numero + " tiene " + numero.length + " cifras");
 
-var array_numeros = new Array(numero.length);
+let array_numeros = new Array(numero.length);
 numero.toString();
 
 for(i=0; i<array_numeros.length;i++) {
@@ -20,3 +21,6 @@ for(i=0; i<array_numeros.length;i++) {
 }
 
 console.log(array_numeros.reverse().join(""));
+}
+
+infoDecenas();

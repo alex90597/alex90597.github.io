@@ -4,7 +4,8 @@
  * En caso de no poder generarse la secuencia (menor que 1) que lo indique.
  */
 
-var numero = prompt("Introduce un número entero mayor que 1");
+function mostrarNumeros() {
+	let numero = prompt("Introduce un número entero mayor que 1");
 
 if (isNaN(numero)) {
     console.log("NO has introducido un número");
@@ -22,3 +23,6 @@ if (isNaN(numero)) {
     }
 
 }
+}
+
+mostrarNumeros();

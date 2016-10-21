@@ -5,9 +5,10 @@
  * Dejará de leer cuando el usuario introduzca el número 2
  */
 
-var control;
-var cadena="";
-var numeroDeCeros=0;
+function contarCeros() {
+    let control;
+let cadena="";
+let numeroDeCeros=0;
 
 while(control != 2) {
     cadena = prompt("Introduce un 1 o un 0. Introduce 2 para terminar");
@@ -26,5 +27,8 @@ while(control != 2) {
 
 }
 
-console.log("Se han introducido " + numeroDeCeros + " ceros");
+return console.log("Se han introducido " + numeroDeCeros + " ceros");
+}
+
+contarCeros();
 

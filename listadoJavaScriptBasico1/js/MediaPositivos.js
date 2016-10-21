@@ -4,9 +4,10 @@
  * Dejará de leer cuando el usuario introduzca el 0
  */
 
-var numero_control;
-var numeros = [];
-var suma=0;
+function calcularMediaPositivos() {
+	let numero_control;
+let numeros = [];
+let suma=0;
 
 while(numero_control != 0) {
     numero_control = prompt("Introduce un número. Introduce el 0 para mostrar la media");
@@ -27,4 +28,7 @@ for(i=0;i<numeros.length;i++) {
     suma+= parseInt(numeros[i]);
 }
 
-console.log(suma/numeros.length);
+return console.log(suma/numeros.length);
+}
+
+calcularMediaPositivos();

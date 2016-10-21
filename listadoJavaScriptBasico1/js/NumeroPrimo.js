@@ -3,7 +3,8 @@
  * Implementa NumeroPrimo que pida un número e indique si es primo o no
  */
 
-var numero = prompt("Introduce un número");
+function numeroPrimo() {
+    let numero = prompt("Introduce un número");
 
 if (isNaN(numero)) {
     console.log("NO has introducido un número");
@@ -28,3 +29,6 @@ if (isNaN(numero)) {
     }
 
 }
+}
+
+numeroPrimo();
