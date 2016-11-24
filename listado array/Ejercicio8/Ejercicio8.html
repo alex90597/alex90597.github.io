@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <h1>8.Indica la diferencia entre los siguientes métodos, y demuestra su uso con algunos arrays:  Array.prototype.forEach(), Array.prototype.every(), Array.prototype.some() y Array.prototype.filter()</h1>
+
+    <h3>Array.prototype.forEach()</h3>
+    <p>forEach() ejecuta la función callback una vez por cada elemento presente en el array en orden ascendente. No es invocada para índices que han sido eliminados o que no hayan sido inicializados</p>
+    <p><strong>callback: </strong>Es la función a ejecutar por cada elemento, que recibe tres argumentos:</p>
+    <ul>
+        <li>El valor del elemento</li>
+        <li>El índice del elemento</li>
+        <li>el array que está siendo recorrido</li>
+    </ul>
+
+    <h3>Array.prototype.every()</h3>
+    <p>El método every() ejecuta la función callback dada una vez por cada elemento presente en el arreglo hasta encontrar uno que haga retornar un valor falso a callback (un valor que resulte falso cuando
+        se convierta a booleano).  Si no se encuentra tal elemento, el método every() de inmediato retorna  false.   O si  callback retorna verdadero para todos los elementos, every() retornará true. callback
+        es llamada sólo para índices del arreglo que tengan valores asignados; no se llama para índices que hayan sido eliminados o a los que no se les haya asignado un valor.</p>
+    <p><strong>callback: </strong>Es la función a ejecutar por cada elemento, que recibe tres argumentos:</p>
+    <ul>
+        <li>El valor del elemento</li>
+        <li>El índice del elemento</li>
+        <li>el array que está siendo recorrido</li>
+    </ul>
+
+    <h3>Array.prototype.some()</h3>
+    <p>some() ejecuta la función callback una vez por cada elemento presente en el array hasta que encuentre uno donde callback retorna un valor verdadero (true). Si se encuentra dicho elemento, some() retorna
+        true inmediatamente. Sino, some() retorna false. callback es invocada sólo para los índices del array que tienen valores asignados; no es invocada para índices que han sido borrados o a los que nunca se les han asignado valores.</p>
+    <p><strong>callback: </strong>Es la función a ejecutar por cada elemento, que recibe tres argumentos:</p>
+    <ul>
+        <li>El valor del elemento</li>
+        <li>El índice del elemento</li>
+        <li>el array que está siendo recorrido</li>
+    </ul>
+
+    <h3>Array.prototype.filter()</h3>
+    <p>filter() llama la función dada callback  por cada elemento del arreglo , y construye un nuevo arreglo con todos los valores para los cuales  callback retorna un valor verdadero. callback es invocada solo para
+        indices del arreglo que tengan asignado un valor. No es invocada para indices que hayan sido borrados o a los que no se les haya asignado valor alguno. Los elementos del arreglo que no pasen la prueba callback
+        simplemente se saltan, y no son incluidos en el nuevo arreglo.</p>
+    <ul>
+        <li>El valor del elemento</li>
+        <li>El índice del elemento</li>
+        <li>el array que está siendo recorrido</li>
+    </ul>
+    <script type="text/javascript" src="../js/ejercicio8.js"></script>
+
+    <noscript>
+        Tu navegador no soporta JavaScript. Actualízalo a una versión más actual.
+    </noscript>
+</body>
+</html>
