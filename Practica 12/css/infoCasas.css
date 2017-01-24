@@ -1,0 +1,234 @@
+* {
+	font-family: 'Oleo Script', cursive;
+}
+
+#principal {
+	width: 100%;
+}
+
+header {
+	background-color: #87c32b;
+	padding: 1%;
+	
+
+}
+
+header h1 {
+	color:#ffffff;
+}
+
+nav {
+	 text-align: center;
+	 background-color: green;
+	 box-shadow: 1px 2px 2px black;
+	
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul li {
+	display: block;
+	border:solid 1px;
+	
+}
+
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	*border:none;
+	box-shadow: -1px -2px 1px  inset;
+	color: #ffffff;
+	transition: all 1s;
+}
+
+nav ul li a:hover {
+  	background-color: #bdf5ff;
+	box-shadow: 2px 2px 3px #007185 inset;
+	transition: all 1s;
+	color: black;
+}
+
+#imagen {
+  padding: 4%;
+	background-image: url(../img/paisaje.jpg);
+	
+
+}
+
+#intro {
+  margin: 10% auto;
+	width: 90%;
+	border: 1px solid;
+	
+	color:#ffffff;
+	background-color: #87c32b;
+	text-align: center;
+
+}
+
+#intro #btn_buscar {
+	margin: 10px;
+}
+
+#intro h2 {
+	font-family: sans-serif;
+}
+
+#intro input {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+#btn_buscar {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #FFEA00;
+	border-radius: 50px;
+	background-image: url(../img/busqueda-icon.png);
+	background-repeat: no-repeat;
+}
+
+#btn_buscar:hover {
+	background-color: #FFFF00;
+}
+
+#contenido {
+	width: 100%;
+	background-color: #F9F9F9;
+	margin-top: 2%;
+}
+
+#busqueda {
+	display: none;
+}
+
+main {
+	width: 100%;
+}
+
+main a img {
+	width: 100%;
+}
+
+main h2 {
+	text-align: center;
+	color:#87c32b;
+	font-size: 3em;
+}
+
+main p {
+	margin-left: 10px;
+}
+
+main ul li {
+	background-image: url("data:image/svg+xml;utf8,<svg version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' x=\'0px\' y=\'0px\' width=\'6px\' height=\'10px\' viewBox=\'0 0 6 10\' enable-background=\'new 0 0 6 10\' xml:space=\'preserve\'><g><path fill=\'rgb(126,185,14)\' d=\'M5.759,5.554L1.785,9.521c-0.139,0.14-0.341,0.226-0.549,0.226S0.828,9.662,0.689,9.521L0.225,9.065 C0.086,8.918,0,8.717,0,8.51c0-0.207,0.086-0.408,0.225-0.549L3.187,5L0.225,2.044C0.086,1.898,0,1.697,0,1.49 s0.086-0.408,0.225-0.549l0.464-0.457C0.828,0.338,1.03,0.253,1.236,0.253s0.409,0.085,0.549,0.231l3.974,3.967 C5.898,4.592,5.983,4.793,5.983,5S5.898,5.408,5.759,5.554z\'/></g></svg>");
+	background-position: 0 7px;
+	background-repeat: no-repeat;
+	list-style: outside none none;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+
+#reservar {
+	background-color: #87c32b;
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+	color: #ffffff;
+
+}
+
+#reservar:hover {
+	background-color: green;
+}
+
+
+
+footer {
+	background-color: #87c32b;
+	height: 100px;
+	margin-top: 2%;
+	text-align: center;
+	line-height: 100px;
+}
+
+/*Tablets */
+@media only screen and (min-width:720px) {
+	nav ul li {
+	 display: inline-block;
+	
+  }
+	
+	nav ul li a {
+		width: 150px;
+	}
+	
+	#intro {
+		width: 90%;
+	}
+	
+	#intro form input {
+		display: inline-block;
+		width: 18%;
+	}
+	
+	#intro #btn_buscar {
+		margin-top: 10px;
+	}
+
+	#contenido {
+		width: 100%;
+	}
+	
+	#busqueda {
+		margin-left: 10px;
+		width: 30%;
+		display: inline-block;
+		border: 1px solid;
+	}
+
+	main {
+		width: 65%;
+		display: inline-block;
+		border: 1px solid;
+		vertical-align: top;
+	}
+
+	main a img {
+		width: 24.5%;
+		
+	}
+
+
+
+
+}
+
+/*Escritorio */
+@media only screen and (min-width:1000px) {
+	#contenido {
+		width: 100%;
+	}
+
+	main {
+		width: 68.5%;
+	}
+
+	#busqueda input,select,h3 {
+		margin-left: 10px;
+	}
+
+	#reservar {
+		padding: 20px;
+	}
+
+	
+}

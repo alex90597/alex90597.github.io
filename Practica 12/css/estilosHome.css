@@ -1,0 +1,253 @@
+* {
+	font-family: 'Oleo Script', cursive;
+}
+
+#principal {
+	width: 100%;
+}
+
+header {
+	background-color: #87c32b;
+	padding: 1%;
+	
+
+}
+
+header h1 {
+	color:#ffffff;
+}
+
+nav {
+	 text-align: center;
+	 background-color: green;
+	 box-shadow: 1px 2px 2px black;
+	
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul li {
+	display: block;
+	border:solid 1px;
+	
+}
+
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	*border:none;
+	box-shadow: -1px -2px 1px  inset;
+	color: #ffffff;
+	transition: all 1s;
+}
+
+nav ul li a:hover {
+  	background-color: #bdf5ff;
+	box-shadow: 2px 2px 3px #007185 inset;
+	transition: all 1s;
+	color: black;
+}
+
+#imagen {
+  padding: 4%;
+	background-image: url(../img/paisaje.jpg);
+	
+
+}
+
+#intro {
+  margin: 10% auto;
+	width: 90%;
+	border: 1px solid;
+	
+	color:#ffffff;
+	background-color: #87c32b;
+	text-align: center;
+
+}
+
+#intro #btn_buscar {
+	margin: 10px;
+}
+
+#intro h2 {
+	font-family: sans-serif;
+}
+
+#intro input {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+#contenido {
+	width: 100%;
+	background-color: #F9F9F9;
+	margin-top: 2%;
+}
+
+#btn_buscar {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #FFEA00;
+	border-radius: 50px;
+	background-image: url(../img/busqueda-icon.png);
+	background-repeat: no-repeat;
+}
+
+#btn_buscar:hover {
+	background-color: #FFFF00;
+}
+
+#busqueda {
+	display: none;
+}
+
+article {
+	margin: 0 auto;
+	width: 95%;
+	border: 1px solid;
+	margin-bottom: 2%;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 1px black;
+}
+
+main {
+	width: 100%;
+	
+}
+
+.reserva {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	padding: 4%;
+	background-color: #87c32b;
+	color: #ffffff;
+	box-shadow: -1px -1px 1px black inset;
+	margin-bottom: 10px;
+}
+
+.reserva:hover {
+	background-color: green;
+	box-shadow: -3px -3px 2px black inset;
+}
+
+.precio {
+	font-size: 2.4em;
+	color: green;
+}
+
+.descripcionCasa {
+	text-align: justify;
+	padding: 10%;
+}
+
+.descripcionCasa a {
+	font-size: 2.4em;
+	text-decoration: none;
+	color:#87c32b;
+}
+
+.descripcionCasa span {
+	color: red;
+	display: block;
+}
+
+.imagenCasa img {
+		width: 100%;
+	}
+
+footer {
+	background-color: #87c32b;
+	height: 100px;
+	margin-top: 2%;
+	text-align: center;
+	line-height: 100px;
+}
+
+@media only screen and (min-width:720px) {
+	nav ul li {
+	 display: inline-block;
+	
+  }
+	
+	nav ul li a {
+		width: 150px;
+	}
+	
+	#intro {
+		width: 90%;
+	}
+	
+	#intro form input {
+		display: inline-block;
+		width: 18%;
+	}
+	
+	#intro #btn_buscar {
+		margin-top: 10px;
+	}
+	
+	#contenido {
+		width: 100%;
+	}
+	
+	#busqueda {
+		margin-left: 10px;
+		width: 30%;
+		display: inline-block;
+		border: 1px solid;
+	}
+	
+	main {
+		width: 68%;
+		vertical-align: top;
+		display: inline-block;
+		
+	}
+}
+
+@media only screen and (min-width:1000px) {
+	#contenido {
+		width: 100%;
+	}
+	
+	.imagenCasa {
+		width: 40%;
+		display: inline-block;
+	}
+	
+	.imagenCasa img {
+		height: 100%;
+	}
+	
+	.descripcionCasa {
+		width: 59%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 0;
+	}
+	
+	.precio {
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	article {
+		width: 97%;
+	}
+	
+	#busqueda input,select,h3 {
+		margin-left: 10px;
+	}
+	
+
+}

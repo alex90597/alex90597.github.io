@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilosHome.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/home.js"></script>
+</head>
+<body>
+	<div id="principal">
+		<header>
+			<h1>Casas Rurales</h1>
+			<nav>
+				<ul>
+					<li><a href="home.html">Home</a></li><li><a href="#">Elemento 1</a></li><li><a href="#">Elemento 2</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="imagen">
+			<div id="intro">
+				<h2>RESERVA LA CASA DE TUS SUEÑOS</h2>
+				<p>Elige entre más de 10.000 alojamientos rurales para reservar de forma fácil y directa</p>
+				<p>Consulta las mejores ofertas en alojamientos.</p>
+				<form action="#">
+					<input type="text" placeholder="Provincia, Pueblo">
+					<input type="date" placeholder="Fecha entrada">
+					<input type="date" placeholder="Fecha salida">
+					<input type="number" min="1" placeholder="Huéspedes">
+					<input type="number" min="1" placeholder="Habitaciones">
+					<input type="button" value="Buscar" id="btn_buscar">
+				</form>
+			</div>
+		</div>
+		<div id="contenido">
+			<div id="busqueda">
+				<h3>FILTRAR POR:</h3>
+				<p><select>
+					<option selected>Alojamiento</option>
+					<option>Albergues</option>
+					<option>Apartamentos</option>
+					<option>Bungalows</option>
+					<option>Cabañas</option>
+					<option>Hoteles</option>
+				</select></p>
+				<p><select>
+					<option selected>Provincia</option>
+					<option>Almería</option>
+					<option>Cádiz</option>
+					<option>Córdoba</option>
+					<option>Granada</option>
+					<option>Huelva</option>
+					<option>Jaén</option>
+					<option>Málaga</option>
+					<option>Sevilla</option>
+				</select></p>
+				<h3>FECHA</h3>
+				<input type="date" placeholder="Fecha Entrada">
+				<input type="date" placeholder="Fecha Salida">
+				<h3>NÚMERO DE PERSONAS</h3>
+				<input type="number" min="1" max="50" placeholder="1-50">
+				<h3>PRECIO POR NOCHE</h3>
+				<input type="number" min="0" max="1000" placeholder="0-1000€">
+				<h3>SERVICIOS</h3>
+				<p><input type="checkbox" name="servicios[]">Minusválidos</p>
+				<p><input type="checkbox" name="servicios[]">Niños</p>
+				<p><input type="checkbox" name="servicios[]">Grupos</p>
+				<p><input type="checkbox" name="servicios[]">Dos personas</p>
+				<p><input type="checkbox" name="servicios[]">Lujo</p>
+				<p><input type="checkbox" name="servicios[]">Nochevieja</p>
+				<p><input type="checkbox" name="servicios[]">Románticas</p>
+				<p><input type="checkbox" name="servicios[]">Barbacoa</p>
+				<p><input type="checkbox" name="servicios[]">Chimenea</p>
+				<p><input type="checkbox" name="servicios[]">Nieve</p>
+				<p><input type="checkbox" name="servicios[]">Cerca de la playa</p>
+				<p><input type="checkbox" name="servicios[]">Mascotas</p>
+				<p><input type="checkbox" name="servicios[]">Piscina</p>
+				<p><input type="checkbox" name="servicios[]">SPA</p>
+				<p><input type="checkbox" name="servicios[]">Jacuzzi</p>
+				<p><input type="checkbox" name="servicios[]">Baratas</p>
+			</div>
+			<main>
+				<article>
+					<div class="imagenCasa">
+						<img src="img/casa1.jpg" alt="casa">
+					</div>
+					
+					<div class="descripcionCasa">
+						<a href="#">Casa Rural Doña Adela</a>
+						<span><img src="img/cubo-icon.png" alt="cubo">10 Habitaciones</span>
+						<p>Como no os podéis quedar sin conocer el centro de Córdoba os dejamos a continuación una lista de los lugares más emblemáticos de la ciudad:  La más representativa y conocida de todas las contrucciones que contiene la ciudad es la Mezquita de... (Casas rurales con encanto Córdoba)</p>
+						<p class="precio">Desde 60€ por noche</p>
+						<input type="button" value="MAS INFO" class="reserva" id="casa1">
+					</div>
+				</article>
+
+				<article>
+					<div class="imagenCasa">
+						<img src="img/casa2.jpg" alt="casa">
+					</div>
+					
+					<div class="descripcionCasa">
+						<a href="#">Casa Rural San Antonio</a>
+						<span><img src="img/cubo-icon.png" alt="cubo">10 Habitaciones</span>
+						<p>El complejo está ubicado a las afueras de Cabra, municipio perteneciente a Córdoba (Andalucía). En este pueblo y los alrededores mas cercanos podrás visitar numerosos lugares interesantes: Algunos de los lugares de interés en Cabra y... (Casa rural Córdoba)</p>
+						<p class="precio">Desde 110€ por noche</p>
+						<input type="button" value="MAS INFO" class="reserva" id="casa2">
+					</div>
+				</article>
+
+				<article>
+					<div class="imagenCasa">
+						<img src="img/casa3.jpg" alt="casa">
+					</div>
+					
+					<div class="descripcionCasa">
+						<a href="#">Casa Rural Cuesta Blanca</a>
+						<span><img src="img/cubo-icon.png" alt="cubo">3 Habitaciones</span>
+						<p>A 45 minutos en autómovil de Córdoba, Montilla es un consistorio andaluz con una demografía próxima a los 23.800 residentes y una densidad de 140 habitantes por kilómetro cuadrado. Desde el punto de vista turístico, su proximidad a la Sierra de... (Casa rural Córdoba)</p>
+						<p class="precio">Desde 120€ por noche</p>
+						<input type="button" value="MAS INFO" class="reserva" id="casa3">
+					</div>
+				</article>
+
+				<article>
+					<div class="imagenCasa">
+						<img src="img/casa4.jpg" alt="casa">
+					</div>
+					
+					<div class="descripcionCasa">
+						<a href="#">Casa Rural Mirador de los Tomillos</a>
+						<span><img src="img/cubo-icon.png" alt="cubo">6 Habitaciones</span>
+						<p>Azuel es una pequeña localidad perteneciente al municipio cordobés de Cardeña. Se localiza en el punto en que confluyen las provincias de Jaén, Córdoba y Ciudad Real. Su situación geográfica es privilegiada para aquellos a los que les guste la... (Casa rural Córdoba)</p>
+						<p class="precio">Desde 300€ por noche</p>
+						<input type="button" value="MAS INFO" class="reserva" id="casa4">
+					</div>
+				</article>
+			</main>
+		</div>
+		<footer>Alejandro Carrillo Roldán</footer>
+	</div>
+</body>
+</html>

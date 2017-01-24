@@ -1,0 +1,71 @@
+#contenido {
+	width: 85%;
+	margin:0 auto;
+	border: solid 1px;
+	background-color: #87c32b;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+	color:#ffffff;
+}
+
+#entrar {
+	width: 100%;
+	padding: 5%;
+	background-color: green;
+	animation-name: animacion;
+	animation-duration: 5s;
+	animation-iteration-count: infinite; 
+}
+
+#entrar:hover {
+	cursor:pointer;
+}
+
+@media only screen and (min-width:720px) {
+	#contenido {
+		width: 100%;
+	}
+
+	#entrar {
+		padding: 2%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#entrar {
+		padding: 1%;
+	}
+}
+
+@keyframes animacion {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0.2;
+	}
+
+	40% {
+		opacity: 0.4;
+	}
+
+	60% {
+		opacity: 0.6;
+	}
+
+	80% {
+		opacity: 0.8;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+

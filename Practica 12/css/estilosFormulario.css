@@ -1,0 +1,121 @@
+* {
+	font-family: 'Oleo Script', cursive;
+}
+
+body {
+  	background-color: #F9F9F9;
+}
+
+#principal {
+	width: 100%;
+}
+
+header {
+	background-color: #87c32b;
+	padding: 1%;
+}
+
+header h1 {
+	color:#ffffff;
+}
+
+nav {
+	 text-align: center;
+	 background-color: green;
+	 box-shadow: 1px 2px 2px black;
+	
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul li {
+	display: block;
+	border:solid 1px;
+	
+}
+
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	*border:none;
+	box-shadow: -1px -2px 1px  inset;
+	color: #ffffff;
+	transition: all 1s;
+}
+
+nav ul li a:hover {
+  	background-color: #bdf5ff;
+	box-shadow: 2px 2px 3px #007185 inset;
+	transition: all 1s;
+	color: black;
+}
+
+main {
+  background-color: #ffffff;
+	width: 62%;
+	margin: 0 auto;
+	
+}
+
+form {
+	text-align: center;
+}
+
+
+
+/*main form p,input {
+	margin: 1%;
+}*/
+
+input {
+	border-radius: 100px;
+}
+
+#reserva {
+	width: 90%;
+	padding: 2%;
+	margin: 5%;
+	background-color: #87c32b;
+	color: #ffffff;
+	box-shadow: -1px -1px 1px black inset;
+	font-size: 2.4em;
+}
+
+#reserva:hover {
+	background-color: green;
+	box-shadow: -3px -3px 2px black inset;
+}
+
+
+
+footer {
+	background-color: #87c32b;
+	height: 100px;
+	margin-top: 2%;
+	text-align: center;
+	line-height: 100px;
+}
+
+/* Tablets */
+@media only screen and (min-width:720px) {
+	nav ul li {
+	 display: inline-block;
+	
+  }
+	
+	nav ul li a {
+		width: 150px;
+	}
+}
+
+/* Ordenadores y pantallas grandes */
+@media only screen and (min-width:1000px) {
+	#reserva {
+		font-size: 3.5em;
+	}
+}
